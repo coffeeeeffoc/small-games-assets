@@ -18368,9 +18368,9 @@
       "height_source": "estimated; no OSM height/floors"
     }
   ],
-  "scene_objects": 3810,
-  "scene_triangles": 3603604,
-  "scene_bytes": 83079564,
+  "scene_objects": 3811,
+  "scene_triangles": 3915576,
+  "scene_bytes": 101926648,
   "views": [
     [
       "bund-overview.png",

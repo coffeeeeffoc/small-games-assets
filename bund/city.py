@@ -163,7 +163,9 @@ for e in elements.values():
 finish_scene('huangpu-suzhou-water','黄浦江与苏州河水面 · OSM 岸线','terrain')
 
 # Roads follow OSM centerlines. Width is a stated rendering estimate, not a survey.
+from streets import ASPHALT_HEIGHT, CURB_HEIGHT, sidewalks
 road_segments=[]
+carriageways=[]
 for e in elements.values():
     tags=e.get('tags',{}); highway=tags.get('highway')
     if not highway or tags.get('tunnel')=='yes': continue
@@ -174,10 +176,19 @@ for e in elements.values():
         length=math.dist(a,b)
         if length<.2: continue
         dx,dy=(b[0]-a[0])/length*width/2,(b[1]-a[1])/length*width/2
-        polygon([(a[0]-dy,a[1]+dx),(a[0]+dy,a[1]-dx),(b[0]+dy,b[1]-dx),(b[0]-dy,b[1]+dx)],
-                1 if tags.get('bridge')=='yes' else .45,0,PAVE if highway=='pedestrian' else ASPHALT)
+        footprint=[(a[0]-dy,a[1]+dx),(a[0]+dy,a[1]-dx),(b[0]+dy,b[1]-dx),(b[0]-dy,b[1]+dx)]
+        height=1 if tags.get('bridge')=='yes' else ASPHALT_HEIGHT
+        pedestrian=highway=='pedestrian'
+        polygon(footprint,height+CURB_HEIGHT if pedestrian else height,0,PAVE if pedestrian else ASPHALT)
+        if not pedestrian: carriageways.append((footprint,height))
         if tags.get('name')=='中山东一路': road_segments.append((a,b))
 finish_scene('street-network','街道与步行道路网 · OSM 中心线','terrain')
+for footprint,height in sidewalks(carriageways):
+    n=len(footprint)
+    meshpart([(x,y,z) for z in [0,height] for x,y in footprint],
+             [tuple(range(n,2*n)),tuple(reversed(range(n)))] +
+             [(i,(i+1)%n,(i+1)%n+n,i+n) for i in range(n)],PAVE)
+finish_scene('street-sidewalks','路侧人行道 · 高出车道15厘米','terrain')
 
 parks=[]
 for e in elements.values():
@@ -230,7 +241,7 @@ for a,b in road_segments:
         place('wooden-bench',p.x+3,p.y,1,angle=angle+math.pi)
     if length>45:
         p=Vector(a)+step*(length*.45)
-        place('city-car',p.x,p.y,.45,angle=angle)
+        place('city-car',p.x,p.y,ASPHALT_HEIGHT,angle=angle)
 
 for poly in parks:
     xs=[p[0] for p in poly]; ys=[p[1] for p in poly]

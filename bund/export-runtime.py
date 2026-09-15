@@ -109,7 +109,37 @@ for o in terrain:
     for tri in o.data.loop_triangles:
         v=[o.matrix_world @ o.data.vertices[i].co for i in tri.vertices]
         park_hulls.append([xyz(Vector((p.x,p.y,h))) for h in [0,.55] for p in v])
-export('terrain.glb', terrain)
+sidewalk_hulls=[]
+for o in terrain:
+    if o.name != 'street-sidewalks': continue
+    for face in o.data.polygons:
+        if face.normal.z < .9: continue
+        v=[o.matrix_world @ o.data.vertices[i].co for i in face.vertices]
+        if min(p.z for p in v) < .01 or max(p.z for p in v)-min(p.z for p in v) > .001: continue
+        sidewalk_hulls.append([xyz(Vector((p.x,p.y,h))) for h in [0,v[0].z] for p in v])
+tile_data=[]
+# Sidewalks stream through the same nearby/visible tile loader as the buildings.
+# Keep the entry terrain small instead of adding the entire city's paving to it.
+for o in terrain:
+    if o.name != 'street-sidewalks': continue
+    chunks={}
+    for face in o.data.polygons:
+        points=[o.matrix_world @ o.data.vertices[i].co for i in face.vertices]
+        center=sum(points,Vector())/len(points)
+        key=(math.floor(center.x/250),math.floor(center.y/250))
+        vertices,faces=chunks.setdefault(key,([],[]))
+        faces.append(tuple(range(len(vertices),len(vertices)+len(points))))
+        vertices.extend(points)
+    for key,(vertices,faces) in chunks.items():
+        name=f'sidewalk_{key[0]}_{key[1]}'
+        mesh=bpy.data.meshes.new(name);mesh.from_pydata(vertices,[],faces)
+        mesh.materials.append(bpy.data.materials['Promenade paving'])
+        obj=bpy.data.objects.new(name,mesh);bpy.context.scene.collection.objects.link(obj)
+        low=Vector(tuple(min(v[i] for v in vertices) for i in range(3)))
+        high=Vector(tuple(max(v[i] for v in vertices) for i in range(3)))
+        tile_data.append({'name':name,'center':xyz((low+high)/2),'radius':(high-low).length/2})
+        export(name+'.glb',[obj])
+export('terrain.glb', [o for o in terrain if o.name != 'street-sidewalks'])
 export('water.glb', [water])
 # Each material is merged within a 250 m tile, preserving useful view frustum culling.
 tiles = {}
@@ -120,7 +150,6 @@ for o in static:
         center = sum((o.matrix_world @ Vector(v) for v in o.bound_box),Vector())/8
         key = (math.floor(center.x/250), math.floor(center.y/250))
     tiles.setdefault(key, []).append(o)
-tile_data=[]
 for key, members in tiles.items():
     bpy.ops.object.select_all(action='DESELECT')
     for o in members: o.select_set(True)
@@ -139,7 +168,7 @@ for name in props:
 # Water triangles are shared with runtime shore exclusion, in the same world coordinates.
 water.data.calc_loop_triangles()
 water_triangles = [[xyz(water.matrix_world @ water.data.vertices[i].co)[::2] for i in tri.vertices] for tri in water.data.loop_triangles]
-data={'colliders':colliders,'benches':benches,'landmarks':landmarks,'props':props,'water':water_triangles,'bounds':[-950,-1630,2550,1840],'tiles':tile_data,'surfaces':surfaces,'parkHulls':park_hulls}
+data={'colliders':colliders,'benches':benches,'landmarks':landmarks,'props':props,'water':water_triangles,'bounds':[-950,-1630,2550,1840],'tiles':tile_data,'surfaces':surfaces,'parkHulls':park_hulls,'sidewalkHulls':sidewalk_hulls}
 (OUT/'world.json').write_text(json.dumps(data,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
 shutil.copy2(SOURCE/'reference/ATTRIBUTION.md',OUT/'ATTRIBUTION.md')
 print('RUNTIME_EXPORT_OK',json.dumps({'tiles':len(tiles),'colliders':len(colliders),'benches':len(benches),'props':sum(map(len,props.values()))}))

@@ -112,9 +112,9 @@
     },
     {
       "file": "bund-environment.glb",
-      "triangles": 3603604,
-      "mesh_objects": 3810,
-      "bytes": 83079564
+      "triangles": 3915576,
+      "mesh_objects": 3811,
+      "bytes": 101926648
     },
     {
       "file": "bund-heritage-block.glb",
@@ -394,9 +394,9 @@
     },
     {
       "file": "river-roads-parks.glb",
-      "triangles": 12824,
-      "mesh_objects": 4,
-      "bytes": 656228
+      "triangles": 324796,
+      "mesh_objects": 5,
+      "bytes": 19503288
     },
     {
       "file": "river-tile.glb",
