@@ -1,0 +1,14 @@
+00:00.438  blend            | Read blend: "F:\playground\playground-ai\small-games\assets\bund\source\bund-environment.blend"
+00:00.875  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+00:55.657  render           | Saved: 'F:\playground\playground-ai\small-games\assets\bund\previews\bund-overview.png'
+01:32.719  render           | Saved: 'F:\playground\playground-ai\small-games\assets\bund\previews\bund-waterfront.png'
+01:46.203  render           | Saved: 'F:\playground\playground-ai\small-games\assets\bund\previews\pudong-from-bund.png'
+01:56.094  render           | Saved: 'F:\playground\playground-ai\small-games\assets\bund\previews\suzhou-river-mouth.png'
+01:56.547  blend            | Read blend: "F:\playground\playground-ai\small-games\assets\bund\source\bund-night.blend"
+02:09.188  render           | Saved: 'F:\playground\playground-ai\small-games\assets\bund\previews\pudong-night.png'
+02:09.188  blend            | Read blend: "F:\playground\playground-ai\small-games\assets\bund\source\bund-asset-library.blend"
+02:20.657  render           | Saved: 'F:\playground\playground-ai\small-games\assets\bund\previews\asset-library.png'
+BUND_RENDER_OK
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

@@ -1,0 +1,642 @@
+[
+  {
+    "id": "asia-building",
+    "name": "亚细亚大楼 · 外滩1号",
+    "address": "1",
+    "kind": "heritage",
+    "roof": "mansard",
+    "tone": "stone",
+    "district": "historic"
+  },
+  {
+    "id": "shanghai-club",
+    "name": "上海总会大楼 · 外滩2号",
+    "osm": 178410325,
+    "kind": "heritage",
+    "roof": "twin-domes",
+    "columns": 6,
+    "floors": 3,
+    "tone": "cream",
+    "district": "historic"
+  },
+  {
+    "id": "union-building",
+    "name": "有利大楼 · 外滩3号",
+    "osm": 178408816,
+    "kind": "heritage",
+    "roof": "corner-dome",
+    "tone": "stone",
+    "district": "historic"
+  },
+  {
+    "id": "nissin-building",
+    "name": "日清大楼 · 外滩5号",
+    "osm": 178408821,
+    "kind": "heritage",
+    "roof": "flat",
+    "tone": "brick",
+    "district": "historic"
+  },
+  {
+    "id": "imperial-bank",
+    "name": "中国通商银行 · 外滩6号",
+    "osm": 178408827,
+    "kind": "heritage",
+    "roof": "gothic",
+    "floors": 3,
+    "tone": "stone",
+    "district": "historic"
+  },
+  {
+    "id": "great-northern-telegraph",
+    "name": "大北电报大楼 · 外滩7号",
+    "address": "7",
+    "kind": "heritage",
+    "roof": "twin-domes",
+    "floors": 4,
+    "tone": "brick",
+    "district": "historic"
+  },
+  {
+    "id": "china-merchants-steam",
+    "name": "轮船招商局大楼 · 外滩9号",
+    "osm": 178408820,
+    "kind": "heritage",
+    "roof": "pediment",
+    "floors": 3,
+    "tone": "brick",
+    "district": "historic"
+  },
+  {
+    "id": "hsbc-building",
+    "name": "原汇丰银行大楼 · 外滩12号",
+    "osm": 2380996,
+    "osm_type": "relation",
+    "kind": "existing",
+    "height": 46,
+    "height_source": "approximate architectural height",
+    "district": "historic"
+  },
+  {
+    "id": "customs-house",
+    "name": "江海关大楼 · 外滩13号",
+    "osm": 178407318,
+    "kind": "existing",
+    "height": 90,
+    "height_source": "approximate clock tower height",
+    "district": "historic"
+  },
+  {
+    "id": "bank-communications-bund",
+    "name": "交通银行大楼 · 外滩14号",
+    "osm": 178405872,
+    "kind": "heritage",
+    "roof": "deco",
+    "tone": "stone",
+    "district": "historic"
+  },
+  {
+    "id": "russo-chinese-bank",
+    "name": "华俄道胜银行 · 外滩15号",
+    "osm": 178405875,
+    "kind": "heritage",
+    "roof": "pediment",
+    "columns": 4,
+    "floors": 3,
+    "tone": "cream",
+    "district": "historic"
+  },
+  {
+    "id": "bank-taiwan",
+    "name": "台湾银行大楼 · 外滩16号",
+    "address": "16",
+    "kind": "heritage",
+    "roof": "flat",
+    "columns": 6,
+    "floors": 4,
+    "tone": "cream",
+    "district": "historic"
+  },
+  {
+    "id": "north-china-daily-news",
+    "name": "字林大楼 · 外滩17号",
+    "address": "17",
+    "kind": "heritage",
+    "roof": "pediment",
+    "floors": 9,
+    "tone": "cream",
+    "district": "historic"
+  },
+  {
+    "id": "chartered-bank",
+    "name": "麦加利银行 · 外滩18号",
+    "address": "18",
+    "kind": "heritage",
+    "roof": "flat",
+    "columns": 4,
+    "floors": 5,
+    "tone": "stone",
+    "district": "historic"
+  },
+  {
+    "id": "palace-hotel",
+    "name": "汇中饭店（和平饭店南楼）· 外滩19号",
+    "osm": 177998982,
+    "kind": "heritage",
+    "roof": "mansard",
+    "floors": 6,
+    "tone": "brick",
+    "district": "historic"
+  },
+  {
+    "id": "peace-hotel",
+    "name": "沙逊大厦（和平饭店）· 外滩20号",
+    "osm": 2376366,
+    "osm_type": "relation",
+    "kind": "existing",
+    "height": 77,
+    "height_source": "approximate roof height",
+    "district": "historic"
+  },
+  {
+    "id": "bank-china-bund",
+    "name": "中国银行大楼 · 外滩23号",
+    "osm": 177995050,
+    "kind": "heritage",
+    "roof": "chinese",
+    "tone": "stone",
+    "height": 73,
+    "height_source": "approximate roof height",
+    "district": "historic"
+  },
+  {
+    "id": "yokohama-specie-bank",
+    "name": "横滨正金银行 · 外滩24号",
+    "osm": 177993356,
+    "kind": "heritage",
+    "roof": "flat",
+    "columns": 6,
+    "tone": "cream",
+    "district": "historic"
+  },
+  {
+    "id": "yangtze-insurance",
+    "name": "扬子保险大楼 · 外滩26号",
+    "osm": 177931019,
+    "kind": "heritage",
+    "roof": "flat",
+    "tone": "stone",
+    "district": "historic"
+  },
+  {
+    "id": "jardine-matheson",
+    "name": "怡和洋行 · 外滩27号",
+    "osm": 177930855,
+    "kind": "heritage",
+    "roof": "flat",
+    "columns": 5,
+    "tone": "cream",
+    "district": "historic"
+  },
+  {
+    "id": "glen-line",
+    "name": "格林邮船大楼 · 北京东路2号",
+    "osm": 177930858,
+    "kind": "heritage",
+    "roof": "corner-dome",
+    "tone": "stone",
+    "district": "historic"
+  },
+  {
+    "id": "banque-indochine",
+    "name": "东方汇理银行 · 外滩29号",
+    "address": "29",
+    "kind": "heritage",
+    "roof": "mansard",
+    "floors": 3,
+    "tone": "stone",
+    "district": "historic"
+  },
+  {
+    "id": "british-consulate",
+    "name": "原英国领事馆 · 外滩源壹号",
+    "osm": 160152535,
+    "kind": "heritage",
+    "roof": "hip",
+    "floors": 2,
+    "height": 15,
+    "height_source": "estimated roof envelope",
+    "tone": "cream",
+    "identity_note": "footprint identified near OSM Waitanyuan POI",
+    "district": "north"
+  },
+  {
+    "id": "peninsula-hotel",
+    "name": "上海半岛酒店",
+    "osm": 177929887,
+    "kind": "heritage",
+    "roof": "deco",
+    "floors": 12,
+    "height": 48,
+    "height_source": "estimated roof envelope",
+    "tone": "cream",
+    "district": "north"
+  },
+  {
+    "id": "broadway-mansions",
+    "name": "上海大厦（百老汇大厦）",
+    "osm": 488961017,
+    "kind": "heritage",
+    "roof": "stepped",
+    "floors": 16,
+    "tone": "brick",
+    "height": 76,
+    "height_source": "approximate roof height",
+    "district": "north"
+  },
+  {
+    "id": "astor-house",
+    "name": "浦江饭店",
+    "osm": 293504494,
+    "kind": "heritage",
+    "roof": "mansard",
+    "tone": "brick",
+    "district": "north"
+  },
+  {
+    "id": "russian-consulate",
+    "name": "俄罗斯领事馆",
+    "osm": 24476069,
+    "kind": "heritage",
+    "roof": "corner-dome",
+    "floors": 3,
+    "tone": "brick",
+    "district": "north"
+  },
+  {
+    "id": "union-church",
+    "name": "新天安堂",
+    "osm": 11636804,
+    "kind": "church",
+    "tone": "brick",
+    "district": "north"
+  },
+  {
+    "id": "rockbund-museum",
+    "name": "亚洲文会大楼（外滩美术馆）",
+    "osm": 446934758,
+    "kind": "heritage",
+    "roof": "deco",
+    "tone": "stone",
+    "district": "north"
+  },
+  {
+    "id": "postal-museum",
+    "name": "上海邮政总局大楼",
+    "osm": 11629370,
+    "kind": "heritage",
+    "roof": "clock-dome",
+    "columns": 8,
+    "floors": 4,
+    "tone": "stone",
+    "district": "north"
+  },
+  {
+    "id": "capitol-building",
+    "name": "光陆大楼",
+    "osm": 293504471,
+    "kind": "heritage",
+    "roof": "deco",
+    "tone": "stone",
+    "district": "north"
+  },
+  {
+    "id": "metropole-hotel",
+    "name": "都城饭店",
+    "osm": 232498681,
+    "kind": "heritage",
+    "roof": "stepped",
+    "tone": "brick",
+    "district": "historic"
+  },
+  {
+    "id": "bund-center",
+    "name": "外滩中心",
+    "osm": 10726438,
+    "kind": "modern",
+    "roof": "crown",
+    "height": 198.9,
+    "district": "historic"
+  },
+  {
+    "id": "westin-bund",
+    "name": "外滩威斯汀酒店",
+    "osm": 325216963,
+    "kind": "modern",
+    "roof": "flat",
+    "district": "historic"
+  },
+  {
+    "id": "white-magnolia",
+    "name": "白玉兰广场办公塔楼",
+    "osm": 442978949,
+    "kind": "modern",
+    "roof": "petal",
+    "height": 320,
+    "district": "north"
+  },
+  {
+    "id": "oriental-pearl",
+    "name": "东方明珠电视塔",
+    "osm": 40778038,
+    "kind": "existing",
+    "height": 468,
+    "width": 105,
+    "depth": 105,
+    "height_source": "https://english.shanghai.gov.cn/en-ScenicSpots/20231205/19a5f5184eca45728fd57a4d4c8efc61.html",
+    "district": "pudong"
+  },
+  {
+    "id": "shanghai-tower",
+    "name": "上海中心大厦",
+    "osm": 165792123,
+    "kind": "existing",
+    "height": 632,
+    "width": 118,
+    "depth": 118,
+    "height_source": "https://www.gensler.com/projects/shanghai-tower",
+    "district": "pudong"
+  },
+  {
+    "id": "jin-mao-tower",
+    "name": "金茂大厦",
+    "osm": 376075961,
+    "kind": "existing",
+    "height": 420.5,
+    "height_source": "OSM height tag; https://www.som.com/projects/jin-mao-tower/",
+    "district": "pudong"
+  },
+  {
+    "id": "world-financial-center",
+    "name": "上海环球金融中心",
+    "osm": 10691100,
+    "kind": "existing",
+    "height": 492,
+    "height_source": "https://www.swfc-shanghai.com/up_pdf/1321340644_23490.pdf",
+    "district": "pudong"
+  },
+  {
+    "id": "ifc-south",
+    "name": "国金中心南塔",
+    "osm": 164968674,
+    "kind": "modern",
+    "roof": "slant",
+    "height": 249.9,
+    "district": "pudong"
+  },
+  {
+    "id": "ifc-north",
+    "name": "国金中心北塔",
+    "osm": 423304682,
+    "kind": "modern",
+    "roof": "slant",
+    "height": 259.9,
+    "district": "pudong"
+  },
+  {
+    "id": "aurora-plaza",
+    "name": "震旦国际大楼",
+    "osm": 164970992,
+    "kind": "modern",
+    "roof": "round",
+    "tone": "gold",
+    "height": 185,
+    "district": "pudong"
+  },
+  {
+    "id": "convention-center",
+    "name": "上海国际会议中心",
+    "osm": 40778072,
+    "kind": "convention",
+    "height": 42,
+    "height_source": "estimated envelope",
+    "district": "pudong"
+  },
+  {
+    "id": "super-brand-mall",
+    "name": "正大广场",
+    "osm": 40779113,
+    "kind": "modern",
+    "roof": "mall",
+    "height": 45,
+    "height_source": "estimated envelope",
+    "district": "pudong"
+  },
+  {
+    "id": "ocean-aquarium",
+    "name": "上海海洋水族馆",
+    "osm": 404676268,
+    "kind": "modern",
+    "roof": "wave",
+    "height": 18,
+    "height_source": "estimated roof envelope",
+    "district": "pudong"
+  },
+  {
+    "id": "shangri-la-river",
+    "name": "浦东香格里拉浦江楼",
+    "osm": 281580982,
+    "kind": "modern",
+    "roof": "hip",
+    "district": "pudong"
+  },
+  {
+    "id": "shangri-la-grand",
+    "name": "浦东香格里拉紫金楼",
+    "osm": 281583582,
+    "kind": "modern",
+    "roof": "flat",
+    "district": "pudong"
+  },
+  {
+    "id": "bank-china-pudong",
+    "name": "中银大厦",
+    "osm": 164957811,
+    "kind": "modern",
+    "roof": "pyramid",
+    "height": 258,
+    "height_source": "approximate architectural height",
+    "district": "pudong"
+  },
+  {
+    "id": "taiping-finance",
+    "name": "太平金融大厦",
+    "osm": 135635393,
+    "kind": "modern",
+    "roof": "slant",
+    "height": 238,
+    "district": "pudong"
+  },
+  {
+    "id": "china-insurance",
+    "name": "中国保险大厦",
+    "osm": 135840678,
+    "kind": "modern",
+    "roof": "pyramid",
+    "height": 196,
+    "district": "pudong"
+  },
+  {
+    "id": "china-merchants-tower",
+    "name": "招商局大厦",
+    "osm": 164972436,
+    "kind": "modern",
+    "roof": "round",
+    "height": 168,
+    "district": "pudong"
+  },
+  {
+    "id": "china-shipbuilding",
+    "name": "中国船舶大厦",
+    "osm": 164972442,
+    "kind": "modern",
+    "roof": "flat",
+    "district": "pudong"
+  },
+  {
+    "id": "bank-communications-pudong",
+    "name": "交银金融大厦",
+    "osm": 164971470,
+    "kind": "modern",
+    "roof": "stepped",
+    "height": 265,
+    "height_source": "approximate architectural height",
+    "district": "pudong"
+  },
+  {
+    "id": "agricultural-bank",
+    "name": "农银大厦",
+    "osm": 166126953,
+    "kind": "modern",
+    "roof": "flat",
+    "height": 216,
+    "district": "pudong"
+  },
+  {
+    "id": "construction-bank",
+    "name": "建行大厦",
+    "osm": 166126958,
+    "kind": "modern",
+    "roof": "flat",
+    "height": 216,
+    "district": "pudong"
+  },
+  {
+    "id": "stock-exchange",
+    "name": "上海证券交易所",
+    "osm": 1274074066,
+    "kind": "modern",
+    "roof": "portal",
+    "height": 180,
+    "district": "pudong"
+  },
+  {
+    "id": "foxconn-building",
+    "name": "富士康大厦",
+    "osm": 165985305,
+    "kind": "modern",
+    "roof": "flat",
+    "district": "pudong"
+  },
+  {
+    "id": "citigroup-tower",
+    "name": "花旗集团大厦",
+    "osm": 520990202,
+    "kind": "modern",
+    "roof": "slant",
+    "district": "pudong"
+  },
+  {
+    "id": "bfc-north",
+    "name": "外滩金融中心 N1",
+    "osm": 447024813,
+    "kind": "modern",
+    "roof": "slant",
+    "district": "historic"
+  },
+  {
+    "id": "fosun-art-center",
+    "name": "复星艺术中心",
+    "osm": 520214798,
+    "kind": "arts",
+    "height": 28,
+    "height_source": "estimated roof envelope",
+    "district": "historic"
+  },
+  {
+    "id": "museum-art-pudong",
+    "name": "浦东美术馆",
+    "osm": 803292747,
+    "kind": "modern",
+    "roof": "mall",
+    "height": 30,
+    "district": "pudong"
+  },
+  {
+    "id": "lyceum-building",
+    "name": "兰心大楼",
+    "osm": 446934736,
+    "kind": "heritage",
+    "roof": "flat",
+    "tone": "stone",
+    "district": "north"
+  },
+  {
+    "id": "yifeng-building",
+    "name": "益丰洋行大楼",
+    "osm": 177930861,
+    "kind": "heritage",
+    "roof": "pediment",
+    "tone": "brick",
+    "district": "north"
+  },
+  {
+    "id": "one-lujiazui",
+    "name": "时代金融中心",
+    "osm": 12981053,
+    "osm_type": "relation",
+    "kind": "modern",
+    "roof": "slant",
+    "height": 269,
+    "height_source": "approximate architectural height",
+    "district": "pudong"
+  },
+  {
+    "id": "bfc-n2",
+    "name": "外滩金融中心 N2",
+    "osm": 447024801,
+    "kind": "modern",
+    "roof": "slant",
+    "district": "historic"
+  },
+  {
+    "id": "bfc-s1",
+    "name": "外滩金融中心 S1",
+    "osm": 447024817,
+    "kind": "modern",
+    "roof": "slant",
+    "height": 180,
+    "height_source": "approximate architectural height",
+    "district": "historic"
+  },
+  {
+    "id": "bfc-s2",
+    "name": "外滩金融中心 S2",
+    "osm": 447024809,
+    "kind": "modern",
+    "roof": "slant",
+    "height": 180,
+    "height_source": "approximate architectural height",
+    "district": "historic"
+  }
+]

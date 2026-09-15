@@ -1,0 +1,564 @@
+{
+  "passed": true,
+  "checks": "93 GLB round trips; finite geometry; nondegenerate surfaces; materials; 3 blend reopen; 6 PNG dimensions; landmark sources and height ordering",
+  "files": [
+    {
+      "file": "agricultural-bank.glb",
+      "triangles": 2448,
+      "mesh_objects": 1,
+      "bytes": 134864
+    },
+    {
+      "file": "asia-building.glb",
+      "triangles": 19076,
+      "mesh_objects": 1,
+      "bytes": 1028296
+    },
+    {
+      "file": "astor-house.glb",
+      "triangles": 19076,
+      "mesh_objects": 1,
+      "bytes": 1029064
+    },
+    {
+      "file": "aurora-plaza.glb",
+      "triangles": 5036,
+      "mesh_objects": 1,
+      "bytes": 222652
+    },
+    {
+      "file": "bank-china-bund.glb",
+      "triangles": 40440,
+      "mesh_objects": 1,
+      "bytes": 2181328
+    },
+    {
+      "file": "bank-china-pudong.glb",
+      "triangles": 2456,
+      "mesh_objects": 1,
+      "bytes": 135388
+    },
+    {
+      "file": "bank-communications-bund.glb",
+      "triangles": 19076,
+      "mesh_objects": 1,
+      "bytes": 1027236
+    },
+    {
+      "file": "bank-communications-pudong.glb",
+      "triangles": 2496,
+      "mesh_objects": 1,
+      "bytes": 137728
+    },
+    {
+      "file": "bank-taiwan.glb",
+      "triangles": 12920,
+      "mesh_objects": 1,
+      "bytes": 684424
+    },
+    {
+      "file": "banque-indochine.glb",
+      "triangles": 9620,
+      "mesh_objects": 1,
+      "bytes": 517680
+    },
+    {
+      "file": "bfc-n2.glb",
+      "triangles": 2456,
+      "mesh_objects": 1,
+      "bytes": 135564
+    },
+    {
+      "file": "bfc-north.glb",
+      "triangles": 2456,
+      "mesh_objects": 1,
+      "bytes": 135580
+    },
+    {
+      "file": "bfc-s1.glb",
+      "triangles": 2456,
+      "mesh_objects": 1,
+      "bytes": 135576
+    },
+    {
+      "file": "bfc-s2.glb",
+      "triangles": 2456,
+      "mesh_objects": 1,
+      "bytes": 135580
+    },
+    {
+      "file": "bollard.glb",
+      "triangles": 152,
+      "mesh_objects": 1,
+      "bytes": 6896
+    },
+    {
+      "file": "british-consulate.glb",
+      "triangles": 7216,
+      "mesh_objects": 1,
+      "bytes": 387628
+    },
+    {
+      "file": "broadway-mansions.glb",
+      "triangles": 40376,
+      "mesh_objects": 1,
+      "bytes": 2178224
+    },
+    {
+      "file": "bund-center.glb",
+      "triangles": 2908,
+      "mesh_objects": 1,
+      "bytes": 156908
+    },
+    {
+      "file": "bund-environment.glb",
+      "triangles": 3484074,
+      "mesh_objects": 3810,
+      "bytes": 81815204
+    },
+    {
+      "file": "bund-heritage-block.glb",
+      "triangles": 74412,
+      "mesh_objects": 1,
+      "bytes": 4290120
+    },
+    {
+      "file": "bund-historic-district.glb",
+      "triangles": 826768,
+      "mesh_objects": 30,
+      "bytes": 45543504
+    },
+    {
+      "file": "capitol-building.glb",
+      "triangles": 14348,
+      "mesh_objects": 1,
+      "bytes": 771836
+    },
+    {
+      "file": "chartered-bank.glb",
+      "triangles": 14900,
+      "mesh_objects": 1,
+      "bytes": 794792
+    },
+    {
+      "file": "chen-yi-statue.glb",
+      "triangles": 456,
+      "mesh_objects": 1,
+      "bytes": 15124
+    },
+    {
+      "file": "china-insurance.glb",
+      "triangles": 2456,
+      "mesh_objects": 1,
+      "bytes": 135372
+    },
+    {
+      "file": "china-merchants-steam.glb",
+      "triangles": 9460,
+      "mesh_objects": 1,
+      "bytes": 508784
+    },
+    {
+      "file": "china-merchants-tower.glb",
+      "triangles": 5036,
+      "mesh_objects": 1,
+      "bytes": 222612
+    },
+    {
+      "file": "china-shipbuilding.glb",
+      "triangles": 2448,
+      "mesh_objects": 1,
+      "bytes": 134888
+    },
+    {
+      "file": "citigroup-tower.glb",
+      "triangles": 2456,
+      "mesh_objects": 1,
+      "bytes": 135608
+    },
+    {
+      "file": "city-bus.glb",
+      "triangles": 332,
+      "mesh_objects": 1,
+      "bytes": 19152
+    },
+    {
+      "file": "city-car.glb",
+      "triangles": 200,
+      "mesh_objects": 1,
+      "bytes": 11856
+    },
+    {
+      "file": "construction-bank.glb",
+      "triangles": 2448,
+      "mesh_objects": 1,
+      "bytes": 134856
+    },
+    {
+      "file": "convention-center.glb",
+      "triangles": 63028,
+      "mesh_objects": 1,
+      "bytes": 3271988
+    },
+    {
+      "file": "customs-house.glb",
+      "triangles": 142108,
+      "mesh_objects": 1,
+      "bytes": 8150608
+    },
+    {
+      "file": "ferry-terminal.glb",
+      "triangles": 36,
+      "mesh_objects": 1,
+      "bytes": 4188
+    },
+    {
+      "file": "fosun-art-center.glb",
+      "triangles": 2824,
+      "mesh_objects": 1,
+      "bytes": 135488
+    },
+    {
+      "file": "foxconn-building.glb",
+      "triangles": 2448,
+      "mesh_objects": 1,
+      "bytes": 134908
+    },
+    {
+      "file": "garden-bridge.glb",
+      "triangles": 996,
+      "mesh_objects": 1,
+      "bytes": 51888
+    },
+    {
+      "file": "glen-line.glb",
+      "triangles": 24280,
+      "mesh_objects": 1,
+      "bytes": 1289948
+    },
+    {
+      "file": "great-northern-telegraph.glb",
+      "triangles": 13128,
+      "mesh_objects": 1,
+      "bytes": 668604
+    },
+    {
+      "file": "hedge-planter.glb",
+      "triangles": 156,
+      "mesh_objects": 1,
+      "bytes": 5320
+    },
+    {
+      "file": "hsbc-building.glb",
+      "triangles": 158724,
+      "mesh_objects": 1,
+      "bytes": 9102752
+    },
+    {
+      "file": "huangpu-cruise-boat.glb",
+      "triangles": 204,
+      "mesh_objects": 1,
+      "bytes": 14912
+    },
+    {
+      "file": "ifc-north.glb",
+      "triangles": 2456,
+      "mesh_objects": 1,
+      "bytes": 135580
+    },
+    {
+      "file": "ifc-south.glb",
+      "triangles": 2456,
+      "mesh_objects": 1,
+      "bytes": 135580
+    },
+    {
+      "file": "imperial-bank.glb",
+      "triangles": 9572,
+      "mesh_objects": 1,
+      "bytes": 514796
+    },
+    {
+      "file": "jardine-matheson.glb",
+      "triangles": 19808,
+      "mesh_objects": 1,
+      "bytes": 1058112
+    },
+    {
+      "file": "jin-mao-tower.glb",
+      "triangles": 3028,
+      "mesh_objects": 1,
+      "bytes": 165524
+    },
+    {
+      "file": "lujiazui-skyline.glb",
+      "triangles": 173904,
+      "mesh_objects": 25,
+      "bytes": 8946736
+    },
+    {
+      "file": "lyceum-building.glb",
+      "triangles": 18908,
+      "mesh_objects": 1,
+      "bytes": 1018104
+    },
+    {
+      "file": "metropole-hotel.glb",
+      "triangles": 35648,
+      "mesh_objects": 1,
+      "bytes": 1922876
+    },
+    {
+      "file": "museum-art-pudong.glb",
+      "triangles": 576,
+      "mesh_objects": 1,
+      "bytes": 33780
+    },
+    {
+      "file": "nissin-building.glb",
+      "triangles": 18908,
+      "mesh_objects": 1,
+      "bytes": 1018932
+    },
+    {
+      "file": "north-china-daily-news.glb",
+      "triangles": 23644,
+      "mesh_objects": 1,
+      "bytes": 1273940
+    },
+    {
+      "file": "ocean-aquarium.glb",
+      "triangles": 1332,
+      "mesh_objects": 1,
+      "bytes": 69456
+    },
+    {
+      "file": "one-lujiazui.glb",
+      "triangles": 2456,
+      "mesh_objects": 1,
+      "bytes": 135584
+    },
+    {
+      "file": "oriental-pearl.glb",
+      "triangles": 9068,
+      "mesh_objects": 1,
+      "bytes": 240544
+    },
+    {
+      "file": "palace-hotel.glb",
+      "triangles": 16736,
+      "mesh_objects": 1,
+      "bytes": 902760
+    },
+    {
+      "file": "peace-hotel.glb",
+      "triangles": 140268,
+      "mesh_objects": 1,
+      "bytes": 8291532
+    },
+    {
+      "file": "peninsula-hotel.glb",
+      "triangles": 30920,
+      "mesh_objects": 1,
+      "bytes": 1666760
+    },
+    {
+      "file": "peoples-heroes-monument.glb",
+      "triangles": 48,
+      "mesh_objects": 1,
+      "bytes": 3796
+    },
+    {
+      "file": "plane-tree-planter.glb",
+      "triangles": 3328,
+      "mesh_objects": 1,
+      "bytes": 67188
+    },
+    {
+      "file": "postal-museum.glb",
+      "triangles": 14016,
+      "mesh_objects": 1,
+      "bytes": 721636
+    },
+    {
+      "file": "promenade-section.glb",
+      "triangles": 360,
+      "mesh_objects": 1,
+      "bytes": 22032
+    },
+    {
+      "file": "promenade-stairs.glb",
+      "triangles": 96,
+      "mesh_objects": 1,
+      "bytes": 6372
+    },
+    {
+      "file": "river-roads-parks.glb",
+      "triangles": 12824,
+      "mesh_objects": 4,
+      "bytes": 656228
+    },
+    {
+      "file": "river-tile.glb",
+      "triangles": 156,
+      "mesh_objects": 1,
+      "bytes": 10424
+    },
+    {
+      "file": "riverside-lamp.glb",
+      "triangles": 204,
+      "mesh_objects": 1,
+      "bytes": 11680
+    },
+    {
+      "file": "road-section.glb",
+      "triangles": 72,
+      "mesh_objects": 1,
+      "bytes": 5812
+    },
+    {
+      "file": "rockbund-museum.glb",
+      "triangles": 16736,
+      "mesh_objects": 1,
+      "bytes": 900860
+    },
+    {
+      "file": "russian-consulate.glb",
+      "triangles": 10096,
+      "mesh_objects": 1,
+      "bytes": 524752
+    },
+    {
+      "file": "russo-chinese-bank.glb",
+      "triangles": 10180,
+      "mesh_objects": 1,
+      "bytes": 539972
+    },
+    {
+      "file": "shanghai-club.glb",
+      "triangles": 11820,
+      "mesh_objects": 1,
+      "bytes": 586828
+    },
+    {
+      "file": "shanghai-tower.glb",
+      "triangles": 50204,
+      "mesh_objects": 1,
+      "bytes": 2928896
+    },
+    {
+      "file": "shangri-la-grand.glb",
+      "triangles": 2448,
+      "mesh_objects": 1,
+      "bytes": 134940
+    },
+    {
+      "file": "shangri-la-river.glb",
+      "triangles": 2456,
+      "mesh_objects": 1,
+      "bytes": 136200
+    },
+    {
+      "file": "signal-tower.glb",
+      "triangles": 1064,
+      "mesh_objects": 1,
+      "bytes": 58364
+    },
+    {
+      "file": "stock-exchange.glb",
+      "triangles": 60,
+      "mesh_objects": 1,
+      "bytes": 5324
+    },
+    {
+      "file": "super-brand-mall.glb",
+      "triangles": 576,
+      "mesh_objects": 1,
+      "bytes": 33756
+    },
+    {
+      "file": "surrounding-buildings.glb",
+      "triangles": 263818,
+      "mesh_objects": 2767,
+      "bytes": 16392332
+    },
+    {
+      "file": "suzhou-north-bund.glb",
+      "triangles": 193956,
+      "mesh_objects": 12,
+      "bytes": 10286900
+    },
+    {
+      "file": "taiping-finance.glb",
+      "triangles": 2456,
+      "mesh_objects": 1,
+      "bytes": 135580
+    },
+    {
+      "file": "traffic-light.glb",
+      "triangles": 340,
+      "mesh_objects": 1,
+      "bytes": 9732
+    },
+    {
+      "file": "union-building.glb",
+      "triangles": 19552,
+      "mesh_objects": 1,
+      "bytes": 1034608
+    },
+    {
+      "file": "union-church.glb",
+      "triangles": 4840,
+      "mesh_objects": 1,
+      "bytes": 264084
+    },
+    {
+      "file": "wayfinding-sign.glb",
+      "triangles": 24,
+      "mesh_objects": 1,
+      "bytes": 3036
+    },
+    {
+      "file": "westin-bund.glb",
+      "triangles": 2448,
+      "mesh_objects": 1,
+      "bytes": 134896
+    },
+    {
+      "file": "white-magnolia.glb",
+      "triangles": 3236,
+      "mesh_objects": 1,
+      "bytes": 142740
+    },
+    {
+      "file": "wooden-bench.glb",
+      "triangles": 108,
+      "mesh_objects": 1,
+      "bytes": 7848
+    },
+    {
+      "file": "world-financial-center.glb",
+      "triangles": 1576,
+      "mesh_objects": 1,
+      "bytes": 86888
+    },
+    {
+      "file": "yangtze-insurance.glb",
+      "triangles": 18908,
+      "mesh_objects": 1,
+      "bytes": 1018144
+    },
+    {
+      "file": "yifeng-building.glb",
+      "triangles": 14188,
+      "mesh_objects": 1,
+      "bytes": 764044
+    },
+    {
+      "file": "yokohama-specie-bank.glb",
+      "triangles": 19988,
+      "mesh_objects": 1,
+      "bytes": 1066128
+    }
+  ]
+}

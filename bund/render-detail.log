@@ -1,0 +1,6 @@
+00:03.875  blend            | Read blend: "F:\playground\playground-ai\small-games\assets\bund\source\bund-environment.blend"
+00:04.063  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+00:29.016  render           | Saved: 'F:\playground\playground-ai\small-games\assets\bund\previews\bund-waterfront.png'
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

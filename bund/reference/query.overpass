@@ -1,0 +1,10 @@
+[out:json][timeout:90];
+(
+  way[building](31.222,121.480,31.254,121.518);
+  relation[building](31.222,121.480,31.254,121.518);
+  way[highway~"primary|secondary|tertiary|residential|pedestrian"](31.222,121.480,31.254,121.518);
+  way[natural=water](31.222,121.480,31.254,121.518);
+  way[waterway](31.222,121.480,31.254,121.518);
+  way[leisure=park](31.222,121.480,31.254,121.518);
+  relation[natural=water](31.222,121.480,31.254,121.518);
+);out body geom;
