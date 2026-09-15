@@ -85,3 +85,19 @@ geometry.py 保存基础模型与网格工具，architecture.py 保存新增建�
 
 地图数据 © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright)，数据依照 ODbL 提供。截图已保留署名；接入产品或分发素材时保留 [数据来源与授权说明](reference/ATTRIBUTION.md)，并在展示地图场景的页面显示相应署名和链接。
 
+
+## Web 漫游运行资源 · 2026-09-16
+
+`runtime/` 是 `travel-bund` 直接引用的共享发布资源，由本仓库维护；不在游戏源目录复制第二份。
+
+```powershell
+& 'D:\setup\Blender\blender.exe' --background --python-exit-code 1 --python assets/bund/build.py -- --no-render
+& 'D:\setup\Blender\blender.exe' --background --python-exit-code 1 --python assets/bund/export-runtime.py
+```
+
+- `vehicles.py` 制作带轮胎、五辐轮毂、车窗、灯组、门缝、后视镜和格栅的四门轿车；轮胎最低点为模型原点，场景放置在 0.45 米路面。
+- 命名地标与背景建筑底部落到 0 米地面；同步重建 `.blend`、组合 GLB 与清单。
+- `export-runtime.py` 输出 198 个约 250 米城市分块，采用 20 位 Draco 位置量化，保留薄立面细节。`world.json` 包含分块包围球、地面实体碰撞数据、设施和水域坐标。
+- 道路导出为带侧面的实体路缘；物理数据使用闭合长方体，绿地使用三角柱。建筑碰撞仍为室外包围体。
+- 地形与水面保持浮点坐标；Draco 解码器及 Apache-2.0 授权集中保存在 `runtime/draco/`。
+- 本次未重渲染此前的六张 Blender 总览图；`validation.json` 检查了重建后的 93 个 GLB、三个源文件及已有预览文件的有效性。

@@ -82,11 +82,7 @@ box(0,0,7,29,10,.6,SILVER)
 finish('ferry-terminal','滨江渡口候船设施')
 for i in range(8): box(0,i*.5,i*.22,12,.5,.35,TRIM)
 finish('promenade-stairs','滨江步道阶梯')
-box(0,0,.9,4.5,1.9,1.2,STONE)
-box(-.3,0,1.65,2.2,1.7,.75,GLASS)
-for x in [-1.4,1.4]:
-    for y in [-1,1]: rod((x,y-.1,.55),(x,y+.1,.55),.43,IRON,12)
-finish('city-car','街区车辆')
+import vehicles  # Sedan geometry shares the asset library material table.
 box(0,0,1.8,11,2.6,3,TRIM)
 for x in [-3.5,-2,-.5,1,2.5,4]:
     for y in [-1.32,1.32]: box(x,y,2.2,1.1,.07,1.1,GLASS)
@@ -138,7 +134,7 @@ def finish_scene(name,label,group):
 
 for name,pos,angle,poly in placements:
     group=next(s['district'] for s in specs if s['id']==name)
-    place(name,*pos,angle=angle,group=group)
+    place(name,*pos,z=-min(v.co.z for v in ASSETS[name].data.vertices),angle=angle,group=group)
 
 def polygon(poly,z,h,mat):
     if geo.area(poly)<0: poly=list(reversed(poly))
@@ -203,7 +199,7 @@ for e,poly in mapped:
     tags=e.get('tags',{}); h,source=geo.height(tags)
     if h<2: continue
     mat=buildings.PALE if h>65 else STONE if e['id']%3 else buildings.BRICK
-    polygon(poly,1,h,mat)
+    polygon(poly,0,h,mat)
     # ponytail: context facades use floor bands; use surveyed elevations for street-level closeups.
     for z in range(4,int(h),4):
         for a,b in zip(poly,poly[1:]+poly[:1]):
@@ -234,7 +230,7 @@ for a,b in road_segments:
         place('wooden-bench',p.x+3,p.y,1,angle=angle+math.pi)
     if length>45:
         p=Vector(a)+step*(length*.45)
-        place('city-car',p.x,p.y,1,angle=angle)
+        place('city-car',p.x,p.y,.45,angle=angle)
 
 for poly in parks:
     xs=[p[0] for p in poly]; ys=[p[1] for p in poly]

@@ -112,9 +112,9 @@
     },
     {
       "file": "bund-environment.glb",
-      "triangles": 3484074,
+      "triangles": 3603604,
       "mesh_objects": 3810,
-      "bytes": 81815204
+      "bytes": 83079564
     },
     {
       "file": "bund-heritage-block.glb",
@@ -184,9 +184,9 @@
     },
     {
       "file": "city-car.glb",
-      "triangles": 200,
+      "triangles": 24106,
       "mesh_objects": 1,
-      "bytes": 11856
+      "bytes": 1275308
     },
     {
       "file": "construction-bank.glb",
@@ -294,7 +294,7 @@
       "file": "lujiazui-skyline.glb",
       "triangles": 173904,
       "mesh_objects": 25,
-      "bytes": 8946736
+      "bytes": 8946788
     },
     {
       "file": "lyceum-building.glb",
@@ -480,7 +480,7 @@
       "file": "surrounding-buildings.glb",
       "triangles": 263818,
       "mesh_objects": 2767,
-      "bytes": 16392332
+      "bytes": 16392176
     },
     {
       "file": "suzhou-north-bund.glb",

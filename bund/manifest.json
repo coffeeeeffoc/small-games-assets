@@ -1712,13 +1712,13 @@
     },
     {
       "id": "city-car",
-      "name": "街区车辆",
+      "name": "城市轿车 · 四门旅行款",
       "file": "models/city-car.glb",
-      "triangles": 200,
+      "triangles": 24106,
       "dimensions_blender_xyz": [
-        4.5,
-        2.2,
-        1.905
+        4.694,
+        2.25,
+        1.528
       ],
       "category": "prop",
       "geometry": "original environment prop"
@@ -18369,8 +18369,8 @@
     }
   ],
   "scene_objects": 3810,
-  "scene_triangles": 3484074,
-  "scene_bytes": 81815204,
+  "scene_triangles": 3603604,
+  "scene_bytes": 83079564,
   "views": [
     [
       "bund-overview.png",
