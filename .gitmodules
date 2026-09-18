@@ -1,0 +1,4 @@
+[submodule "english-dict"]
+	path = english-dict
+	url = https://github.com/coffeeeeffoc/english-words-assets.git
+	branch = main
