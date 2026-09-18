@@ -2,3 +2,7 @@
 	path = english-dict
 	url = https://github.com/coffeeeeffoc/english-words-assets.git
 	branch = main
+[submodule "carding-car"]
+	path = carding-car
+	url = https://github.com/coffeeeeffoc/carding-car-assets.git
+	branch = main

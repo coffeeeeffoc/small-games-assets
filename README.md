@@ -3,6 +3,7 @@
 按主题保存可编辑源文件、运行时模型、预览与制作脚本。
 
 - [`bund/`](bund/README.md)：外滩滨江环境，Blender 源文件、独立 GLB 配件与组合场景。
+- [`carding-car/`](carding-car/README.md)：独立 Git submodule，海湾卡丁车效果图、赛车/树木/灯塔/礁石 GLB、道路模块、贴图及生成记录，可供其他项目复用。
 - [`english-dict/`](english-dict/README.md)：独立 Git submodule，保存英语词库、教材词表及原始素材。应用读取 `english-dict/精简词库/英语词库.sqlite`，按需在构建时导出词表 JSON；`完整素材/` 用于追溯和重建，不进入应用包。
 
 在 `small-games` 根目录运行 `git submodule update --init --recursive assets`，可一并获取素材与词库的锁定版本。
