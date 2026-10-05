@@ -112,9 +112,9 @@
     },
     {
       "file": "bund-environment.glb",
-      "triangles": 3915576,
+      "triangles": 3822574,
       "mesh_objects": 3811,
-      "bytes": 101926648
+      "bytes": 96040364
     },
     {
       "file": "bund-heritage-block.glb",
@@ -228,7 +228,7 @@
       "file": "garden-bridge.glb",
       "triangles": 996,
       "mesh_objects": 1,
-      "bytes": 51888
+      "bytes": 51908
     },
     {
       "file": "glen-line.glb",
@@ -394,9 +394,9 @@
     },
     {
       "file": "river-roads-parks.glb",
-      "triangles": 324796,
+      "triangles": 231794,
       "mesh_objects": 5,
-      "bytes": 19503288
+      "bytes": 13616988
     },
     {
       "file": "river-tile.glb",

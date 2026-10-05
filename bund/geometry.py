@@ -385,7 +385,8 @@ for side in [-1,1]:
         rod((x,y,1),(x+4,y,4.8),.13,IRON,6)
         rod((x,y,4.8),(x+4,y,1),.13,IRON,6)
     rod((14,y,1),(14,y,4.8),.13,IRON,6)
-for x in [-12,12]: box(x,0,.25,2,7,.5,STONE)
+# At the city's 3 m origin and 2x vertical scale these piers span ground to deck underside.
+for x in [-12,12]: box(x,0,-.4,2,7,2.2,STONE)
 finish('garden-bridge','外白渡桥意象钢桁架桥段')
 
 meshpart([(-6,-1.8,0),(4,-1.8,0),(6,0,0),(4,1.8,0),(-6,1.8,0),

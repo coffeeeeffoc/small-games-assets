@@ -50,10 +50,9 @@ def sidewalks(roads):
         a,b,c,d = poly
         width,length = math.dist(a,b),math.dist(b,c)
         u = ((b[0]-a[0])/width,(b[1]-a[1])/width)
-        v = ((c[0]-b[0])/length,(c[1]-b[1])/length)
-        outer = [(p[0]+SIDEWALK_WIDTH*(sx*u[0]+sy*v[0]),
-                  p[1]+SIDEWALK_WIDTH*(sx*u[1]+sy*v[1]))
-                 for p,sx,sy in [(a,-1,-1),(b,1,-1),(c,1,1),(d,-1,1)]]
+        # Only widen the sides. End caps leave raised paving across road-segment joins.
+        outer = [(p[0]+SIDEWALK_WIDTH*sx*u[0], p[1]+SIDEWALK_WIDTH*sx*u[1])
+                 for p,sx in [(a,-1),(b,1),(c,1),(d,-1)]]
         ob = bounds(outer)
         pieces = [outer]
         # Subtract carriageways first, including cross streets; then earlier sidewalks.
@@ -75,6 +74,8 @@ if __name__ == '__main__':
     crossing = [([(-2,-10),(2,-10),(2,10),(-2,10)], ASPHALT_HEIGHT),
                 ([(-10,-2),(10,-2),(10,2),(-10,2)], ASPHALT_HEIGHT)]
     result = list(sidewalks(crossing))
+    single = list(sidewalks([crossing[0]]))
+    assert single and all(-10 <= p[1] <= 10 for piece,_ in single for p in piece), 'No paving end caps across road joins'
     assert result and all(abs(h-.17) < 1e-9 for _,h in result)
     for piece,_ in result:
         for road,_ in crossing:

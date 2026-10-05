@@ -66,8 +66,9 @@ for o in objects:
         colliders.append(box(o,(-6,-4,0),(6,4,.62)))
         if name == 'promenade-section':colliders.append(box(o,(-6,3.45,.6),(6,3.9,1.98)))
     elif name == 'garden-bridge':
-        colliders.append(box(o,(-14,-3.5,-.2),(14,3.5,.2)))
-        for side in [-1,1]: colliders.append(box(o,(-14,side*3.3-.15,.1),(14,side*3.3+.15,1.3)))
+        # Same 0.7..1.3 m deck as geometry.py, including the placed model's vertical scale.
+        colliders.append(box(o,(-14,-3,.7),(14,3,1.3)))
+        for side in [-1,1]: colliders.append(box(o,(-14,side*3.15-.15,1.3),(14,side*3.15+.15,2.2)))
         # Bridge's raised deck needs visible approach ramps, added in runtime with matching colliders.
     elif name == 'plane-tree-planter': colliders.append(box(o,(-.45,-.45,0),(.45,.45,3)))
     elif name == 'riverside-lamp': colliders.append(box(o,(-.2,-.2,0),(.2,.2,3.8)))

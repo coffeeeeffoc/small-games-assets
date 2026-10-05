@@ -169,6 +169,8 @@ carriageways=[]
 for e in elements.values():
     tags=e.get('tags',{}); highway=tags.get('highway')
     if not highway or tags.get('tunnel')=='yes': continue
+    # The authored bridge supplies its deck; a second OSM road at 1 m floats below it.
+    if e['id']==27498117: continue
     width={'primary':18,'secondary':12,'tertiary':9,'residential':6,'pedestrian':8}.get(highway,6)
     points=[geo.xy(p) for p in e.get('geometry',[])]
     for a,b in zip(points,points[1:]):
@@ -177,6 +179,9 @@ for e in elements.values():
         if length<.2: continue
         dx,dy=(b[0]-a[0])/length*width/2,(b[1]-a[1])/length*width/2
         footprint=[(a[0]-dy,a[1]+dx),(a[0]+dy,a[1]-dx),(b[0]+dy,b[1]-dx),(b[0]-dy,b[1]+dx)]
+        # Overlap short segment ends so floating-point gaps cannot grow curb slivers.
+        ux,uy=(b[0]-a[0])/length*.25,(b[1]-a[1])/length*.25
+        footprint=[(x+sign*ux,y+sign*uy) for (x,y),sign in zip(footprint,[-1,-1,1,1])]
         height=1 if tags.get('bridge')=='yes' else ASPHALT_HEIGHT
         pedestrian=highway=='pedestrian'
         polygon(footprint,height+CURB_HEIGHT if pedestrian else height,0,PAVE if pedestrian else ASPHALT)

@@ -307,7 +307,7 @@
       "dimensions_blender_xyz": [
         28.26,
         7.0,
-        4.96
+        6.46
       ],
       "category": "prop",
       "geometry": "original environment prop"
@@ -18369,8 +18369,8 @@
     }
   ],
   "scene_objects": 3811,
-  "scene_triangles": 3915576,
-  "scene_bytes": 101926648,
+  "scene_triangles": 3822574,
+  "scene_bytes": 96040364,
   "views": [
     [
       "bund-overview.png",
